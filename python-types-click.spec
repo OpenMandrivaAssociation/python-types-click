@@ -3,7 +3,7 @@
 
 Name:		python-types-click
 Version:	7.1.8
-Release:	1
+Release:	2
 Summary:	Typing stubs for click
 URL:		https://pypi.org/project/types-click/
 License:	Apache-2.0
@@ -12,8 +12,8 @@ Source0:	https://files.pythonhosted.org/packages/source/t/types-click/%{module}-
 BuildSystem:	python
 BuildArch:	noarch
 
-BuildRequires:	python
-BuildRequires:	pkgconfig(python3)
+BuildRequires:	pkgconfig
+BuildRequires:	pkgconfig(python)
 BuildRequires:	python%{pyver}dist(setuptools)
 
 %description
@@ -26,8 +26,8 @@ Typing stubs for click.
 %py_build
 
 %install
-%py3_install
+%py_install
 
 %files
-%{python3_sitelib}/click-stubs
-%{python3_sitelib}/%{oname}-%{version}*.egg-info
+%{python_sitelib}/click-stubs
+%{python_sitelib}/%{oname}-%{version}*.egg-info
