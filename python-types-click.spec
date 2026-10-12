@@ -3,7 +3,7 @@
 
 Name:		python-types-click
 Version:	7.1.8
-Release:	2
+Release:	3
 Summary:	Typing stubs for click
 URL:		https://pypi.org/project/types-click/
 License:	Apache-2.0
